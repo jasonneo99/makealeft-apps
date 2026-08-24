@@ -3,37 +3,62 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MemoryPilot — See what your Mac is doing</title>
-  <meta name="description" content="MemoryPilot brings live Mac performance and storage insight together with clear, safety-first recommendations. Get the Mac App Store edition or explore MemoryPilot Pro.">
+  <title>MemoryPilot — Find what is slowing down your Mac</title>
+  <meta name="description" content="See what is slowing down your Mac, understand why, and fix it safely. MemoryPilot offers local CPU, memory-pressure, process, and storage insight without requiring paid AI.">
+  <link rel="icon" href="/memorypilot/assets/app-icon.png">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4WMYWY7BSM"></script>
   <script src="/analytics.js"></script>
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body class="product-page memorypilot-page">
   <main>
+    <div class="memorypilot-hero-shell">
     <nav class="product-nav product-wrap" aria-label="Product navigation">
       <a href="/" class="back-link">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg>
         <span>Back to Make a Left</span>
       </a>
-      <div><a href="#editions">Editions</a><a href="/memorypilot/support/">Support</a><a href="/memorypilot/privacy/">Privacy</a></div>
+      <div><a href="#demo">Demo</a><a href="#editions">Editions</a><a href="/memorypilot/support/">Support</a></div>
     </nav>
 
     <header class="product-hero product-wrap">
       <div class="product-intro">
-        <img class="product-icon" src="/memorypilot/assets/app-icon.png" width="1024" height="1024" alt="MemoryPilot app icon">
         <h1>MemoryPilot</h1>
-        <h2>See what your Mac is doing.</h2>
-        <p>Live performance and storage insight, presented with clear, safety-first recommendations.</p>
+        <h2>See what is slowing down your Mac, understand why, and fix it safely.</h2>
+        <p>Monitor CPU, memory pressure, processes, and storage with clear recommendations that keep you in control.</p>
         <div class="product-actions">
           <a class="primary-action" href="https://apps.apple.com/us/app/memorypilot-system-optimizer/id6798454081?mt=12">View on the Mac App Store</a>
-          <a class="secondary-action" href="#pro">Explore Pro</a>
+          <button class="secondary-action demo-trigger" type="button" data-demo-open>Watch 30-second demo</button>
         </div>
+        <p class="hero-trust"><span aria-hidden="true">✓</span> Works without paid AI. One-time $9.99 purchase.</p>
       </div>
       <figure class="product-frame hero-frame">
         <img src="/memorypilot/assets/overview.png" width="1440" height="900" alt="MemoryPilot Overview showing CPU load, memory pressure, live performance, and top app memory">
       </figure>
     </header>
+    </div>
+
+    <section class="store-conversion" aria-labelledby="store-conversion-title">
+      <div class="product-wrap store-conversion-inner">
+        <div>
+          <h2 id="store-conversion-title">A clearer Mac for $9.99.</h2>
+          <p>One purchase. No subscription required for local monitoring.</p>
+        </div>
+        <a class="store-conversion-action" href="https://apps.apple.com/us/app/memorypilot-system-optimizer/id6798454081?mt=12">Get MemoryPilot on the Mac App Store <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <section class="demo-section product-wrap" id="demo" aria-labelledby="demo-title">
+      <div class="demo-copy">
+        <h2 id="demo-title">Understand the slowdown in 30 seconds.</h2>
+        <p>See the path from a performance warning to the process causing it, then review a safe next step before anything changes.</p>
+        <button class="text-action demo-trigger" type="button" data-demo-open>Play the guided demo <span aria-hidden="true">→</span></button>
+      </div>
+      <button class="demo-poster" type="button" data-demo-open aria-label="Play the 30-second MemoryPilot demo">
+        <img src="/memorypilot/assets/overview.png" width="1440" height="900" loading="lazy" alt="MemoryPilot performance overview">
+        <span class="demo-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m9 7 8 5-8 5Z"/></svg></span>
+      </button>
+    </section>
 
     <section class="feature-band product-wrap">
       <div class="feature-copy">
@@ -90,7 +115,7 @@
             <li>Remote Mac monitoring and optimization</li>
             <li>Advanced AI advisor and automation modes</li>
           </ul>
-          <a class="edition-action pro-action" href="mailto:support@makealeft.app?subject=MemoryPilot%20Pro%20early%20access">Join the Pro early-access list <span aria-hidden="true">→</span></a>
+          <a class="edition-action pro-action" href="mailto:support@makealeft.app?subject=MemoryPilot%20Pro%20beta">Join the Pro beta <span aria-hidden="true">→</span></a>
           <small>Pro will be distributed directly by Make a Left as a separately signed and notarized Mac app.</small>
         </article>
       </div>
@@ -114,5 +139,32 @@
 
     <footer class="product-footer product-wrap"><span>© 2026 Make a Left</span><a href="mailto:support@makealeft.app">support@makealeft.app</a></footer>
   </main>
+
+  <dialog class="demo-dialog" id="demo-dialog" aria-labelledby="demo-dialog-title">
+    <div class="demo-dialog-head">
+      <div><strong id="demo-dialog-title">MemoryPilot in 30 seconds</strong><span id="demo-step-label">1 of 3</span></div>
+      <button type="button" data-demo-close aria-label="Close demo">×</button>
+    </div>
+    <div class="demo-stage">
+      <figure class="demo-slide is-active" data-demo-slide>
+        <img src="/memorypilot/assets/overview.png" width="1440" height="900" alt="MemoryPilot Overview showing memory pressure and the apps using the most memory">
+        <figcaption><strong>Spot the pressure.</strong><span>See CPU, memory pressure, and the biggest app groups together.</span></figcaption>
+      </figure>
+      <figure class="demo-slide" data-demo-slide>
+        <img src="/memorypilot/assets/processes.png" width="1440" height="900" alt="MemoryPilot Processes view ranking resource impact">
+        <figcaption><strong>Find the cause.</strong><span>Rank processes by combined CPU and memory impact.</span></figcaption>
+      </figure>
+      <figure class="demo-slide" data-demo-slide>
+        <img src="/memorypilot/assets/optimize.png" width="1440" height="900" alt="MemoryPilot Optimize view with reviewed recommendations">
+        <figcaption><strong>Review the next step.</strong><span>Understand the recommendation before you act.</span></figcaption>
+      </figure>
+      <div class="demo-progress" aria-hidden="true"><span></span></div>
+    </div>
+    <div class="demo-dialog-actions">
+      <button type="button" data-demo-replay>Replay</button>
+      <a href="https://apps.apple.com/us/app/memorypilot-system-optimizer/id6798454081?mt=12">View on the Mac App Store</a>
+    </div>
+  </dialog>
+  <script src="/memorypilot/demo.js"></script>
 </body>
 </html>
