@@ -1,0 +1,18 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "makealeft-legacy-privacy-redirects",
+  "account_id": "6183ee3be61dbccdab1cd179ff92693e",
+  "main": "cloudflare/legacy-privacy-redirect.mjs",
+  "compatibility_date": "2026-09-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "routes": [
+    {
+      "pattern": "apps.makealeft.me/jobsearchos/privacy*",
+      "zone_name": "makealeft.me"
+    }
+  ],
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  }
+}
